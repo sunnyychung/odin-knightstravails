@@ -39,7 +39,10 @@ function knightMoves(start, end) {
                 current = map.get(current);
             }
 
-            return path.reverse();
+            path = path.reverse();
+
+            console.log(`=> You made it in ${path.length} moves \n`);
+            return path;
         }
 
         getMoves(space).forEach((move) => {
